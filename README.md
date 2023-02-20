@@ -7,6 +7,10 @@
 If you use a simple TextView in MotionLayout for textSize transitions, the animation won't be smooth. Here MotionText will solve the issue, as internally 
 it will convert text to Image and during transition only the image is resized. It also have a few out of the box design attributes.
 
+<div align="center">
+<img src="motion_demo.gif" />
+</div>
+
 ## Installation
 Add it in your root build.gradle at the end of repositories:
 ```gradle
