@@ -24,7 +24,7 @@ allprojects {
 Add the dependency
 ```gradle
 dependencies {
-    implementation 'com.github.rajdeepvaghela:MotionText:1.0.0'
+    implementation 'com.github.rajdeepvaghela:MotionText:1.0.1'
 }
 ```
 ## Usage
