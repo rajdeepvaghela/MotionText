@@ -159,7 +159,7 @@ class MotionText(context: Context, attrs: AttributeSet?) : AppCompatImageView(co
     private fun prepareBitmap(text: String): Bitmap {
         val textWidth = textPaint.measureText(text).toInt().takeIf { it > 0 } ?: 1
         val textHeight = with(textPaint.fontMetricsInt) {
-            bottom - top + leading
+            bottom - top + descent - (textPaint.textSize / 5).toInt()
         }.takeIf { it > 0 } ?: 1
         val baseline = with(textPaint.fontMetrics) {
             descent - ascent - (textPaint.textSize / 10)
